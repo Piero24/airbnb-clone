@@ -64,8 +64,6 @@ const Counter: React.FC<CounterProps> = ({
                 <div className="font-light text-xl text-neutral-600">
                     {value}
                 </div>
-            </div>
-            <div className="flex flex-row items-center gap-4">
                 <div
                     onClick={onAdd}
                     className="
@@ -84,9 +82,6 @@ const Counter: React.FC<CounterProps> = ({
                     "
                 >
                     <AiOutlinePlus/>
-                </div>
-                <div className="font-light text-xl text-neutral-600">
-                    {value}
                 </div>
             </div>
         </div>

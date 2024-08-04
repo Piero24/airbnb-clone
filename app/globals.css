@@ -8,9 +8,9 @@ body,
     height: 100%;
 }
 
-.leaflet-bottom,
+/* .leaflet-bottom,
 .leatlet-control,
 .leatlet-pane,
 .leaflet-top {
-    z-index: 0 ! important;
-}
+    z-index: 0 !important;
+} */
