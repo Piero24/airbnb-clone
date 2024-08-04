@@ -7,3 +7,10 @@ body,
 :root {
     height: 100%;
 }
+
+.leaflet-bottom,
+.leatlet-control,
+.leatlet-pane,
+.leaflet-top {
+    z-index: 0 ! important;
+}
