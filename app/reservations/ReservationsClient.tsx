@@ -1,22 +1,22 @@
 'use client';
 
+import toast from "react-hot-toast";
+import axios from "axios";
+import { useCallback, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import Container from "../components/Container";
-import Heading from "../components/Heading";
 import { SafeReservation, SafeUser } from "../types";
-import { use, useCallback, useState } from "react";
-import axios from "axios";
-import toast from "react-hot-toast";
+
+import Heading from "../components/Heading";
+import Container from "../components/Container";
 import ListingCard from "../components/listings/ListingCard";
 
-interface TripsClientProps {
+interface ReservationsClientProps {
     reservations: SafeReservation[];
     currentUser?: SafeUser | null;
-        
 }
 
-const TripsClient: React.FC<TripsClientProps> = ({
+const ReservationsClient: React.FC<ReservationsClientProps> = ({
     reservations,
     currentUser
 }) => {
@@ -27,24 +27,24 @@ const TripsClient: React.FC<TripsClientProps> = ({
         setDeletingId(id);
 
         axios.delete(`/api/reservations/${id}`)
-        .then(() => {
-            toast.success('Reservation cancelled');
-            router.refresh();   
-        })
-        .catch((error) => {
-            toast.error(error?.response?.data?.error);
-        })
-        .finally(() => {
-            setDeletingId('');
-        });
+            .then(() => {
+                toast.success('Reservation cancelled');
+                router.refresh();
+            })
+            .catch((error) => {
+                toast.error("Something went wrong");
+            })
+            .finally(() => {
+                setDeletingId('');
+            });
 
     }, [router]);
 
     return (
         <Container>
             <Heading
-                title="Trips"
-                subtitle="Where you been and where you're going."
+                title="Reservations"
+                subtitle="Booking on your properties."
             />
             <div
                 className="
@@ -67,7 +67,7 @@ const TripsClient: React.FC<TripsClientProps> = ({
                         actionId={reservation.id}
                         onAction={onCancel}
                         disabled={deletedId === reservation.id}
-                        actionLabel="Cancel reservation"
+                        actionLabel="Cancel guest reservation"
                         currentUser={currentUser}
                     />
                 ))}
@@ -76,4 +76,4 @@ const TripsClient: React.FC<TripsClientProps> = ({
     );
 }
 
-export default TripsClient;
+export default ReservationsClient;
