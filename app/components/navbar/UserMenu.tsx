@@ -115,6 +115,10 @@ const UserMenu: React.FC<UserMenuProps>= ({
                                     label="My Reservations"
                                 />
                                 <MenuItem 
+                                    onClick={() => router.push('/properties')}
+                                    label="My Properties"
+                                />
+                                <MenuItem 
                                     onClick={rentModal.onOpen}
                                     label="Airbinb my home"
                                 />
