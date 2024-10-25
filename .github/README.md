@@ -53,7 +53,7 @@
 
 
 <br/><br/>
-<h2 id="itroduction">📔  Itroduction</h2>
+<h2 id="introduction">📔  Introduction</h2>
 <p>
     Welcome to the Airbnb Clone project! This repository contains the full source code for a feature-rich, fully responsive clone of the popular Airbnb platform. The project is designed to simulate the core functionalities of Airbnb, allowing users to explore and book listings, manage their reservations, and even host their own properties. Built using cutting-edge web technologies, this clone provides an excellent foundation for learning and experimenting with full-stack development.
 </p>
