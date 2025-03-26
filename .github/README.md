@@ -5,7 +5,7 @@
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Piero24/airbnb-clone/main/.github/Airbnb_Clone_Logo.png?token=GHSAT0AAAAAACRN7RLY2FHCV365IZMIEX5SZV3QLOA" width="auto" height="70">
+  <img src="https://raw.githubusercontent.com/Piero24/airbnb-clone/refs/heads/main/.github/Airbnb_Clone_Logo.png" width="auto" height="70">
 </p>
 <h1 align="center">
     <a href="https://github.com/Piero24/airbnb-clone">Airbnb Clone</a>
@@ -66,7 +66,7 @@
 </p>
 <br/>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Piero24/airbnb-clone/main/.github/screen_1.png?token=GHSAT0AAAAAACRN7RLYF65VNTECTDLC4YJKZV3QLXA">
+  <img src="https://raw.githubusercontent.com/Piero24/airbnb-clone/refs/heads/main/.github/screen_1.png">
 </p>
 <br/>
 <h4>2. User Authentication</h4>
@@ -90,7 +90,7 @@
 </p>
 <br/>
 <p align="center">
-  <img <img src="https://raw.githubusercontent.com/Piero24/airbnb-clone/main/.github/screen_2.png?token=GHSAT0AAAAAACRN7RLZXWJF4GAQZ5TZXSJ4ZV3QLZA">>
+  <img <img src="https://raw.githubusercontent.com/Piero24/airbnb-clone/main/.github/screen_2.png">>
 </p>
 <br/>
 <h4>6. Responsive Design</h4>
